@@ -1,8 +1,9 @@
-#!/bin/sh
-rm -rf ampt_test
-mkdir ampt_test
-cp -r ampt/input ampt_test
+#!/bin/bash
+rm -rf data0
+mkdir data0
+cp -r ampt/input data0
 
-condor_submit job* 
+cd submit_ampt
+condor_submit ampt.con 
 
 

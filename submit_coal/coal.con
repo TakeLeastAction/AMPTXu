@@ -1,0 +1,9 @@
+Universe     = vanilla
+Notification = Error
+Initialdir   = .
+Executable   = coal.sh
+Arguments    = $(Process)
+Log          = ./err/supersonic_$(Process).log
+Output       = ./err/supersonic_$(Process).out
+Error        = ./err/supersonic_$(Process).err
+Queue 100         
