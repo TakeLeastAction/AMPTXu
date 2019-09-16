@@ -1,0 +1,11 @@
+Universe      = vanilla
+Notification  = Error
+Initialdir    = /home/lwchen/KJSUN/AMPTXu
+Executable    = ampt_njl.sh
+Arguments     = $(Process)
+Log           =./err/job_$(Process).log
+Output        =./err/job_$(Process).out
+Error         =./err/job_$(Process).err
+Notify_user   =kjsun@tamu.edu
+queue 100
+ 
